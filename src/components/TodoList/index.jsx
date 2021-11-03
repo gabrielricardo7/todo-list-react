@@ -6,7 +6,9 @@ function TodoList({ todos, handleTodo }) {
       {todos.map((todo, index) => (
         <li key={index}>
           {todo}
-          <button onClick={() => handleTodo(todo)}>Concluir tarefa</button>
+          <button className="doTask" onClick={() => handleTodo(todo)}>
+            Concluir tarefa
+          </button>
         </li>
       ))}
     </ul>

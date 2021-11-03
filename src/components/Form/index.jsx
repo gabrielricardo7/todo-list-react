@@ -1,9 +1,8 @@
+import "./styles.css";
 import { useState } from "react";
 
 function Form({ addTodo }) {
   const [newTodo, setNewTodo] = useState("");
-
-  console.log(newTodo);
 
   return (
     <form onSubmit={(event) => event.preventDefault()}>
@@ -13,7 +12,11 @@ function Form({ addTodo }) {
         placeholder="Nova tarefa"
         onChange={(event) => setNewTodo(event.target.value)}
       ></input>
-      <button onClick={() => addTodo(newTodo)} type="button">
+      <button
+        className="newTask"
+        onClick={() => addTodo(newTodo)}
+        type="button"
+      >
         Enviar
       </button>
     </form>

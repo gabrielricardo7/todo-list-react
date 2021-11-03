@@ -1,0 +1,30 @@
+input {
+  border-radius: 10px 0 0 10px;
+  font-family: var(--imprima);
+  font-size: 16px;
+  padding: 5px;
+}
+
+button {
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-family: var(--imprima);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+button:hover {
+  box-shadow: 0 0 1px 1px slategrey;
+  cursor: pointer;
+}
+
+button.newTask {
+  border-radius: 0 10px 10px 0;
+  background-color: crimson;
+  color: white;
+}
+
+button.newTask:hover {
+  background-color: firebrick;
+}
